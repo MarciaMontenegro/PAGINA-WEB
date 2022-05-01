@@ -5,24 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <title>amazon principal</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='Main.css') }}">
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
-
-
-  
-  
-  
+  <link rel="stylesheet" href="{{ url_for('static', filename='productos.css') }}">
   
 </head>
 
@@ -32,7 +15,7 @@
     <div class="header__container">
       <div class="container">
         <div class="logo">
-			<img src="IMAGE/logo1.png" class="logo" width="100" />
+					<img src="{{ url_for('static', filename='IMAGE/logo1.png') }}" class="logo" width="100" />
         </div>
 			  <form action="#">
 			<input type="search" class="buscarInput " name="buscarInput" id="buscarInput" value=""
@@ -40,7 +23,7 @@
 		</form>
 		
 		<div class="logo-carrito">
-			<img src="IMAGE/cart.jpeg" class="logo" width="60" />
+			<img src="{{ url_for('static', filename='IMAGE/cart.jpeg') }}" class="logo" width="60" />
         </div>
 		
        
@@ -69,7 +52,7 @@
 		
 				<section class="child">	
 					<div class="imgenp">
-						<img src="IMAGE/zapatos.jpeg" class="p1" width="60%" />
+						<img src="{{ url_for('static', filename='IMAGE/zapatos.jpeg') }}" class="p1" width="60%" />
 					</div>
 					<div class="descripcionp">
 						<h3> Convers all star </h3><br>
@@ -80,7 +63,7 @@
 				
 				<section class="child">
 					<div class="imgenp">
-						<img src="IMAGE/polo.jpeg" class="p2" width="60%" />
+						<img src="{{ url_for('static', filename='IMAGE/polo.jpeg') }}" class="p2" width="60%" />
 					</div>
 					<div class="descripcionp">
 						<h3> Polo  </h3><br>
@@ -91,7 +74,7 @@
 				
 				<section class="child">
 					<div class="imgenp">
-						<img src="IMAGE/pantalon.jpeg" class="p3" width="40%" />
+						<img src="{{ url_for('static', filename='IMAGE/pantalon.jpeg') }}" class="p3" width="40%" />
 					</div>
 					<div class="descripcionp">
 						<h3> Pantalon </h3><br>
@@ -102,84 +85,7 @@
 				
 				<section class="child">
 					<div class="imgenp">
-						<img src="IMAGE/pantalon.jpeg" class="p3" width="40%" />
-					</div>
-					<div class="descripcionp">
-						<h3> Pantalon </h3><br>
-						<h3> Precio: 90 </h3>
-						
-					</div>
-				</section>
-				
-				<section class="child">
-					<div class="imgenp">
-						<img src="IMAGE/pantalon.jpeg" class="p3" width="40%" />
-					</div>
-					<div class="descripcionp">
-						<h3> Pantalon </h3><br>
-						<h3> Precio: 90 </h3>
-						
-					</div>
-				</section>
-				
-				<section class="child">
-					<div class="imgenp">
-						<img src="IMAGE/pantalon.jpeg" class="p3" width="40%" />
-					</div>
-					<div class="descripcionp">
-						<h3> Pantalon </h3><br>
-						<h3> Precio: 90 </h3>
-						
-					</div>
-				</section>
-				
-				<section class="child">
-					<div class="imgenp">
-						<img src="IMAGE/pantalon.jpeg" class="p3" width="40%" />
-					</div>
-					<div class="descripcionp">
-						<h3> Pantalon </h3><br>
-						<h3> Precio: 90 </h3>
-						
-					</div>
-				</section>
-				
-				<section class="child">
-					<div class="imgenp">
-						<img src="IMAGE/zapatos.jpeg" class="p3" width="40%" />
-					</div>
-					<div class="descripcionp">
-						<h3> Pantalon </h3><br>
-						<h3> Precio: 90 </h3>
-						
-					</div>
-				</section>
-				
-				<section class="child">
-					<div class="imgenp">
-						<img src="IMAGE/polo.jpeg" class="p3" width="40%" />
-					</div>
-					<div class="descripcionp">
-						<h3> Pantalon </h3><br>
-						<h3> Precio: 90 </h3>
-						
-					</div>
-				</section>
-				
-				<section class="child">
-					<div class="imgenp">
-						<img src="IMAGE/pantalon.jpeg" class="p3" width="40%" />
-					</div>
-					<div class="descripcionp">
-						<h3> Pantalon </h3><br>
-						<h3> Precio: 90 </h3>
-						
-					</div>
-				</section>
-				
-				<section class="child">
-					<div class="imgenp">
-						<img src="IMAGE/laptop.jpeg" class="p3" width="50%" />
+						<img src="{{ url_for('static', filename='IMAGE/laptop.jpeg') }}" class="p3" width="50%" />
 					</div>
 					<div class="descripcionp">
 						<h2> Computadora </h2><br>
@@ -190,7 +96,7 @@
 
 				<section class="child">
 					<div class="imgenp">
-						<img src="IMAGE/iphone 13.png" class="p3" width="50%" />
+						<img src="{{ url_for('static', filename='IMAGE/iphone.png') }}" class="p3" width="50%" />
 					</div>
 					<div class="descripcionp">
 						<h2> Celular </h2><br>
@@ -201,7 +107,7 @@
 				
 				<section class="child">
 					<div class="imgenp">
-						<img src="IMAGE/peluche de juguete.jpg" class="p3" width="50%" />
+						<img src="{{ url_for('static', filename='IMAGE/peluche.jpg') }}" class="p3" width="50%" />
 					</div>
 					<div class="descripcionp">
 						<h2> Peluche De Jueguete </h2><br>
@@ -213,7 +119,7 @@
 
 				<section class="child">
 					<div class="imgenp">
-						<img src="IMAGE/PS5.jpg" class="p3" width="50%" />
+						<img src="{{ url_for('static', filename='IMAGE/PS5.jpg') }}" class="p3" width="50%" />
 					</div>
 					<div class="descripcionp">
 						<h2> PlayStation 5 </h2><br>
@@ -225,7 +131,7 @@
 
 				<section class="child">
 					<div class="imgenp">
-						<img src="IMAGE/monitor gaming.jpeg" class="p3" width="50%" />
+						<img src="{{ url_for('static', filename='IMAGE/pantalla.jpeg') }}" class="p3" width="50%" />
 					</div>
 					<div class="descripcionp">
 						<h2> Monitor Gaming </h2><br>
@@ -236,7 +142,7 @@
 				
 				<section class="child">
 					<div class="imgenp">
-						<img src="IMAGE/television.jpeg" class="p3" width="50%" />
+						<img src="{{ url_for('static', filename='IMAGE/television.jpeg') }}" class="p3" width="50%" />
 					</div>
 					<div class="descripcionp">
 						<h2> Television </h2><br>
@@ -247,7 +153,7 @@
 
 				<section class="child">
 					<div class="imgenp">
-						<img src="IMAGE/wisky etiqueta azul.jpg" class="p3" width="50%" />
+						<img src="{{ url_for('static', filename='IMAGE/wisky.jpg') }}" class="p3" width="50%" />
 					</div>
 					<div class="descripcionp">
 						<h2> Whisky etiqueta Azul </h2><br>
