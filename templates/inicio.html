@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+{extend "layout.html"}
+{%block heading%}
 	<meta charset="UTF-8">
   <title>amazon principal</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='inicio.css') }}">
-</head>
+{%endblock%}
 
-<body>
+{%nlock body%}
   <!-- CABECERA -->
   <header class="header">
     <div class="header__container">
@@ -104,6 +102,6 @@
 
 
 
-</body>
+{%endblock%}
 
 </html>
